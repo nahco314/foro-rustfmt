@@ -1,0 +1,4 @@
+[toolchain]
+channel = "nightly-2024-08-17"
+targets = [ "x86_64-unknown-linux-gnu", "wasm32-wasi" ]
+components = ["rustc_src", "llvm-tools", "rustc-dev"]
