@@ -53,7 +53,7 @@ pub fn format(target_path: PathBuf, target_content: String) -> Result<FormatResu
     let (mut config, _) =
         rustfmt_nightly::load_config::<NullOptions>(Some(&target_path.parent().unwrap()), None)?;
 
-    let mut out: Vec<u8> = Vec::with_capacity((target_content.len() as f32 * 1.2) as usize);
+    let mut out: Vec<u8> = Vec::with_capacity(target_content.len() + 100);
     config.set().emit_mode(rustfmt_nightly::EmitMode::Stdout);
     config.set().verbose(Verbosity::Quiet);
     config.set().skip_children(true);
