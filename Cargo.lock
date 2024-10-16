@@ -292,6 +292,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "foro-plugin-utils",
+ "ignore",
  "rustfmt-nightly",
  "serde_json",
 ]

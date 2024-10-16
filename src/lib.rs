@@ -12,8 +12,9 @@ pub fn main_with_json(input: Value) -> Value {
     let start = std::time::Instant::now();
 
     let target = String::get_value(&input, ["target"]).unwrap();
+    let target_content = String::get_value(&input, ["target-content"]).unwrap();
 
-    let result = match format(PathBuf::from(target)) {
+    let result = match format(PathBuf::from(target), target_content) {
         Ok(FormatResult::Success { formatted_content }) => {
             json!({
                 "format-status": "success",
