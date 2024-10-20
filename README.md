@@ -8,10 +8,6 @@ rustfmt depends on the rustc library, and can only be built as a target that can
 
 Also, the rustc library is linked as a dynamic library (and the version of the toolchain used to build rustfmt is different from the one you normally use), so you need to manually set the RPATH for the foro-rustfmt library (for some reason, cargo's automatic specification of RPATH doesn't work).
 
-## Workaround
-
-プラグインを使用せずに
-
 ## Install / Usage
 
 You need to build this project manually, set the RPATH, and set the path in the foro.json.
