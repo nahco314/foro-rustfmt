@@ -279,8 +279,8 @@ checksum = "5443807d6dff69373d433ab9ef5378ad8df50ca6298caf15de6e52e24aaf54d5"
 
 [[package]]
 name = "foro-plugin-utils"
-version = "0.1.0"
-source = "git+https://github.com/nahco314/foro-plugin-utils#ddd01eea1ccc109c3b59b1b59614b416c5bc4adc"
+version = "0.2.0"
+source = "git+https://github.com/nahco314/foro-plugin-utils#17a4bc23175516059862b78ac91dc33afa4d3620"
 dependencies = [
  "anyhow",
  "serde_json",
@@ -288,7 +288,7 @@ dependencies = [
 
 [[package]]
 name = "foro-rustfmt"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "anyhow",
  "foro-plugin-utils",
